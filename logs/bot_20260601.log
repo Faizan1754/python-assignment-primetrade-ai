@@ -1,0 +1,47 @@
+22:12:41  INFO     trading_bot.orders — Placing MARKET BUY BTCUSDT qty=0.001
+22:12:41  DEBUG    trading_bot — POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780332161649}
+22:13:08  INFO     trading_bot.orders — Placing LIMIT SELL ETHUSDT qty=0.01 price=3800 tif=GTC
+22:13:08  DEBUG    trading_bot — POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.01', 'price': '3800', 'timeInForce': 'GTC', 'timestamp': 1780332188968}
+22:13:09  DEBUG    trading_bot — HTTP 401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+22:13:09  ERROR    trading_bot.orders — Order rejected by Binance — Binance error -2015: Invalid API-key, IP, or permissions for action
+22:13:09  ERROR    trading_bot — BinanceAPIError: Binance error -2015: Invalid API-key, IP, or permissions for action
+22:13:30  INFO     trading_bot.orders — Placing STOP_MARKET SELL BTCUSDT qty=0.001 stopPrice=58000
+22:13:30  DEBUG    trading_bot — POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': '0.001', 'stopPrice': '58000', 'timestamp': 1780332210318}
+22:13:31  DEBUG    trading_bot — HTTP 401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+22:13:31  ERROR    trading_bot.orders — Stop-market order rejected — Binance error -2015: Invalid API-key, IP, or permissions for action
+22:13:31  ERROR    trading_bot — BinanceAPIError: Binance error -2015: Invalid API-key, IP, or permissions for action
+22:13:57  INFO     trading_bot.orders — Placing MARKET BUY BTCUSDT qty=0.001
+22:13:57  DEBUG    trading_bot — POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780332237631}
+22:13:58  DEBUG    trading_bot — HTTP 401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+22:13:58  ERROR    trading_bot.orders — Order rejected by Binance — Binance error -2015: Invalid API-key, IP, or permissions for action
+22:13:58  ERROR    trading_bot — BinanceAPIError: Binance error -2015: Invalid API-key, IP, or permissions for action
+22:14:14  INFO     trading_bot.orders — Placing LIMIT SELL ETHUSDT qty=0.01 price=3800 tif=GTC
+22:14:14  DEBUG    trading_bot — POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.01', 'price': '3800', 'timeInForce': 'GTC', 'timestamp': 1780332254934}
+22:14:15  DEBUG    trading_bot — HTTP 401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+22:14:15  ERROR    trading_bot.orders — Order rejected by Binance — Binance error -2015: Invalid API-key, IP, or permissions for action
+22:14:15  ERROR    trading_bot — BinanceAPIError: Binance error -2015: Invalid API-key, IP, or permissions for action
+22:17:52  INFO     trading_bot.orders — Placing MARKET BUY BTCUSDT qty=0.001
+22:17:52  DEBUG    trading_bot — POST https://testnet.binancefuture.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780332472787}
+22:17:58  DEBUG    trading_bot — HTTP 401  body={"code":-2015,"msg":"Invalid API-key, IP, or permissions for action"}
+22:17:58  ERROR    trading_bot.orders — Order rejected by Binance — Binance error -2015: Invalid API-key, IP, or permissions for action
+22:17:58  ERROR    trading_bot — BinanceAPIError: Binance error -2015: Invalid API-key, IP, or permissions for action
+22:38:05  INFO     trading_bot.orders — Placing MARKET BUY BTCUSDT qty=0.001
+22:38:05  DEBUG    trading_bot — POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1780333685151}
+22:38:11  DEBUG    trading_bot — HTTP 400  body={"code":-1021,"msg":"Timestamp for this request is outside of the recvWindow."}
+22:38:11  ERROR    trading_bot.orders — Order rejected by Binance — Binance error -1021: Timestamp for this request is outside of the recvWindow.
+22:38:11  ERROR    trading_bot — BinanceAPIError: Binance error -1021: Timestamp for this request is outside of the recvWindow.
+22:42:05  INFO     trading_bot.orders — Placing MARKET BUY BTCUSDT qty=0.001
+22:42:05  DEBUG    trading_bot — POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'recvWindow': 60000, 'timestamp': 1780333925633}
+22:42:06  DEBUG    trading_bot — HTTP 200  body={"orderId":13714654857,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"a1efrVe1Ii0vC5VFnbcO12","price":"0.00","avgPrice":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","cumQuote":"0.000000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updat
+22:42:06  INFO     trading_bot.orders — Market order placed — orderId=13714654857 status=NEW executedQty=0.0000 avgPrice=0.00
+22:42:06  INFO     trading_bot — Done — orderId=13714654857
+22:42:39  INFO     trading_bot.orders — Placing LIMIT SELL ETHUSDT qty=0.01 price=3800 tif=GTC
+22:42:39  DEBUG    trading_bot — POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.01', 'price': '3800', 'timeInForce': 'GTC', 'recvWindow': 60000, 'timestamp': 1780333959208}
+22:42:39  DEBUG    trading_bot — HTTP 200  body={"orderId":8933317802,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"OrOZ7mZNwPYwz9nDUvgnAH","price":"3800.00","avgPrice":"0.00","origQty":"0.010","executedQty":"0.000","cumQty":"0.000","cumQuote":"0.00000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTi
+22:42:39  INFO     trading_bot.orders — Limit order placed — orderId=8933317802 status=NEW
+22:42:39  INFO     trading_bot — Done — orderId=8933317802
+22:42:54  INFO     trading_bot.orders — Placing STOP_MARKET SELL BTCUSDT qty=0.001 stopPrice=58000
+22:42:54  DEBUG    trading_bot — POST https://demo-fapi.binance.com/fapi/v1/order  params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'STOP_MARKET', 'quantity': '0.001', 'stopPrice': '58000', 'recvWindow': 60000, 'timestamp': 1780333974585}
+22:42:55  DEBUG    trading_bot — HTTP 400  body={"code":-4120,"msg":"Order type not supported for this endpoint. Please use the Algo Order API endpoints instead."}
+22:42:55  ERROR    trading_bot.orders — Stop-market order rejected — Binance error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
+22:42:55  ERROR    trading_bot — BinanceAPIError: Binance error -4120: Order type not supported for this endpoint. Please use the Algo Order API endpoints instead.
